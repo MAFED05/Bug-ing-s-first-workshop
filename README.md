@@ -122,9 +122,54 @@ Continuamos con el siguiente punto
 ## Cuarto punto 🔋
 
 Realice un programa que lea dos números reales y determine si el primero es múltiplo del segundo.
+ 
+En este caso le solicitamos al usurio que ingrese 2 números colocando 'input', como se ha visto reflejado en los ejercicios anteriores. Después de esto dividiremos el primer número entre el segundo número. Si el residuo de esta división es 0 entonces podremos decir que el primer número es múltiplo del segundo, de lo contrario estos 2 no serán multiplos.
 
+El código se vería de la siguiente manera en el archivo [puntoCuatro.py](/puntoCuatro.py):
 
+``` python
+a: float
+b: float
+a = float (input("Ingrese un número real "))
+b = float (input("Ingrese un número real "))
+if a % b == 0 :
+    print (str(a) + " es múltiplo de " + str(b))
+elif a % b != 0 :
+    print (str(a) + " no es múltiplo de " + str(b))
+```
+ 
+Y si lo corremos en el terminal obtendríamos lo siguiente:
 
+[![Captura-de-pantalla-2023-03-14-180235.png](https://i.postimg.cc/Dzskr9RD/Captura-de-pantalla-2023-03-14-180235.png)](https://postimg.cc/kVnp9pJF)
 
+Ya casi llegamos a la mitad, entonces ahora vamos al quinto punto
 
+## Quinto punto
+
+Realice un programa que lea tres números reales y determine si la suma de los dos primeros es mayor, menor o igual que el tercer número.
+
+En este caso le volvemos a solicitar al usuario que ingrese 3 números reales y el siguente paso será sumar los 2 primeros números ingresados y determinar si la suma de estos 2 es mayor, menor o igual al tercer número. 
+**Nota:** Recordemos que la igualdad en Python la mostramos por medio de '=='
+
+``` pythom
+# Punto 5
+a: float
+b: float
+c: float
+a= float (input("Ingrese un número real"))
+b= float (input("Ingrese un número real"))
+c= float (input("Ingrese un número real"))
+if a+b > c :
+    print (str(a) + (" + ") + str(b) + (" es mayor que ") +  (str(c)))
+elif a+b < c : 
+    print (str(a) + (" + ") + str(b) + (" es menor que ") +  (str(c)))
+elif a+b == c :
+    print (str(a) + (" + ") + str(b) + (" es igual que ") +  (str(c)))
+```
+
+Si corremos el código en el terminal podemos ver el siguiente resultado:
+
+[![Captura-de-pantalla-2023-03-14-180913.png](https://i.postimg.cc/GpM7sqmN/Captura-de-pantalla-2023-03-14-180913.png)](https://postimg.cc/FfLgMbcg)
+
+Y para tener un poco más de claridad hemos realizado el siguiente diagrama de flujo
 
