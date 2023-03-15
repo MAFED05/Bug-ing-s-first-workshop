@@ -18,7 +18,7 @@ Así que sin más que decir, iniciemos con el quiz; que es el primer punto
 
 **Nota:** Los puntos pares estarán en archivos de extensión .py, mientras que los impares estarán en un archivo .ypynb (Notebook de Python)
 
-## Quices (Primer punto)
+## Quices (Punto 1) 📂
 
 Este quiz estaba conformado por 20 preguntas y debíamos acertar mínimo en el 90% de estas. Este punto lo realizamos de forma individual y las evidencias están adjuntas a continuación:
 
@@ -39,7 +39,7 @@ Después de haber completado este punto de manera individual, comenzamos a crear
 
 **Nota:** Durante el taller podrán encontrar 3 diagramas de flujo pertenecientes a 3 de los puntos del taller. Estos fueron definidos con base en el último dígito de nuestra cédula
 
-## Segundo punto 🧮
+## Punto 2 🧮
 
 Realice un programa que lea tres números reales y determine cuál es el mayor.
 
@@ -95,7 +95,7 @@ Y de esta manera ya tendríamos el código para el segundo punto, que si lo corr
 
 Para este punto podemos conseguir el siguente diagrama de flujo:
 
-## Tercer punto 👾
+## Punto 3 👾
 
 Realice un programa que lea un número enteros y determine si es par o impar.
 
@@ -121,7 +121,7 @@ Y si lo corremos en el terminal podríamos ver algo así:
 
 Continuamos con el siguiente punto
 
-## Cuarto punto 🔋
+## Punto 4 🔋
 
 Realice un programa que lea dos números reales y determine si el primero es múltiplo del segundo.
  
@@ -146,7 +146,7 @@ Y si lo corremos en el terminal obtendríamos lo siguiente:
 
 Ya casi llegamos a la mitad, entonces ahora vamos al quinto punto
 
-## Quinto punto ✨
+## Punto 5 ✨
 
 Realice un programa que lea tres números reales y determine si la suma de los dos primeros es mayor, menor o igual que el tercer número.
 
@@ -203,11 +203,21 @@ Ahora al punto más difícil
 
 ## Punto 7 🧠
 
-Sin duda alguna este es el punto más difícil del taller por la cantidad de condicionales que se utilizan
+Sin duda alguna este es el punto más difícil del taller por la cantidad de condicionales que se utilizan pues debíamos:
+
+Escribir un programa que pida 5 números reales y calcule las siguientes operaciones:
+
++ El promedio
++ La mediana
++ El promedio multiplicativo (multilplica todos y luego calcula la raíz de la cantidad de operandos)
++ Ordenar los números de forma ascendente
++ Ordenar los números de forma descendente
++ La potencia del mayor número elevado al menor número
++ La raíz cúbica del menor número
 
 Por este motivo decidimos crear el siguiente video:
 
-Aún así se explicará de una manera breve en este espacio. Este punto lo podemos ver en [tallerUno.ipynb](/tallerUno.ipynb) y también podremos ver que es el más largo de todos pues lo podemos ver a continuación: 
+Aún así se explicará de una manera breve en este espacio. Este punto lo podemos ver en [tallerUno.ipynb](/tallerUno.ipynb) y también podremos ver que es el más largo de todos pues lo vemos a continuación: 
 
 ``` python
 # Punto 7 
@@ -348,4 +358,18 @@ else:
 
 print("La raíz cúbica del menor número es:", raiz_cubica)
 ```
+Como nos podemos dar cuenta, en este código decidimos crear notas dentro del mismo código para que de esta manera sea un poco más facil entenderlo pues dada su longitud nos podemos confundir demasiado en el proceso de entender.
 
+Al momento de correr el código obtenemos lo siguiente: 
+
+[![Captura-de-pantalla-2023-03-14-184627.png](https://i.postimg.cc/vZSzXD52/Captura-de-pantalla-2023-03-14-184627.png)](https://postimg.cc/XrddYjH9)
+
+Y listo, eso sería todo por el séptimo punto. Cada vez más cerca del final
+
+## Punto 8 📈
+
+Escriba un programa al que se le ingrese la frecuencia de una onda en hz y como salida arroje en que parte del espectro electromagnético se encuentra.
+
+## Punto 9 
+
+En este punto se nos solicitaba escribir un programa que reciba el nombre en minúsculas de un país de America y retorne la ciudad capital, si el país no pertenece al continente debe arrojar país no identificado
