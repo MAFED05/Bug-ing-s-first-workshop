@@ -28,11 +28,11 @@ Este quiz estaba conformado por 20 preguntas y debíamos acertar mínimo en el 9
 
 + Quiz Jhon Steven Padilla 🎼
 
-
+[![Captura-de-pantalla-13.png](https://i.postimg.cc/NfDmm22K/Captura-de-pantalla-13.png)](https://postimg.cc/RN3WzFRm)
 
 + Quiz Cristian Felipe Gutiérrez 🎮
 
-
+[![Whats-App-Image-2023-03-14-at-9-47-21-PM.jpg](https://i.postimg.cc/VkHtHyR1/Whats-App-Image-2023-03-14-at-9-47-21-PM.jpg)](https://postimg.cc/87Msj09n)
 
 Después de haber completado este punto de manera individual, comenzamos a crear programas dependiendo de lo solicitado por el profesor.
 
@@ -94,6 +94,8 @@ Y de esta manera ya tendríamos el código para el segundo punto, que si lo corr
 [![Captura-de-pantalla-2023-03-14-172159.png](https://i.postimg.cc/Qdp6Nj7f/Captura-de-pantalla-2023-03-14-172159.png)](https://postimg.cc/nXhK0b0m)
 
 Para este punto podemos conseguir el siguente diagrama de flujo:
+
+[![Whats-App-Image-2023-03-14-at-1-23-03-PM.jpg](https://i.postimg.cc/mZNHW1wm/Whats-App-Image-2023-03-14-at-1-23-03-PM.jpg)](https://postimg.cc/s1xXpXbW)
 
 ## Punto 3 👾
 
@@ -175,7 +177,7 @@ Si corremos el código en el terminal podemos ver el siguiente resultado:
 
 Y para tener un poco más de claridad hemos realizado el siguiente diagrama de flujo
 
-
+[![Whats-App-Image-2023-03-14-at-1-39-55-PM.jpg](https://i.postimg.cc/KcNRHSGV/Whats-App-Image-2023-03-14-at-1-39-55-PM.jpg)](https://postimg.cc/PNCXC78z)
 
 ¡Ya pasamos la mitad!Ahora vamos por el punto 6
 
@@ -360,6 +362,9 @@ print("La raíz cúbica del menor número es:", raiz_cubica)
 ```
 Como nos podemos dar cuenta, en este código decidimos crear notas dentro del mismo código para que de esta manera sea un poco más facil entenderlo pues dada su longitud nos podemos confundir demasiado en el proceso de entender.
 
+<a href="https://www.youtube.com/watch?v=oSpRPDHIoa8">Video Explicativo Punto 7</a>
+</p></details><br>
+
 Al momento de correr el código obtenemos lo siguiente: 
 
 [![Captura-de-pantalla-2023-03-14-184627.png](https://i.postimg.cc/vZSzXD52/Captura-de-pantalla-2023-03-14-184627.png)](https://postimg.cc/XrddYjH9)
@@ -370,6 +375,193 @@ Y listo, eso sería todo por el séptimo punto. Cada vez más cerca del final
 
 Escriba un programa al que se le ingrese la frecuencia de una onda en hz y como salida arroje en que parte del espectro electromagnético se encuentra.
 
-## Punto 9 
+Para este punto tenemos el archivo [puntoOcho.py](/puntoOcho.py) con el siguiente código:
 
-En este punto se nos solicitaba escribir un programa que reciba el nombre en minúsculas de un país de America y retorne la ciudad capital, si el país no pertenece al continente debe arrojar país no identificado
+``` python
+# Pedir al usuario que ingrese la frecuencia en Hz
+frecuencia = float(input("Ingrese la frecuencia en Hz: "))
+
+# Comparar la frecuencia con los límites de cada región del espectro
+if frecuencia < 3e9:
+    print("La frecuencia se encuentra en la región de las ondas de radio.")
+elif frecuencia < 3e12:
+    print("La frecuencia se encuentra en la región de las microondas.")
+elif frecuencia < 4.3e14:
+    print("La frecuencia se encuentra en la región del infrarrojo.")
+elif frecuencia < 7.5e14:
+    print("La frecuencia se encuentra en la región visible del espectro electromagnético.")
+elif frecuencia < 3e17:
+    print("La frecuencia se encuentra en la región del ultravioleta.")
+elif frecuencia < 3e19:
+    print("La frecuencia se encuentra en la región de los rayos X.")
+else:
+    print("La frecuencia se encuentra en la región de los rayos gamma.")    
+```
+
+Para este punto decidimos solicitarle al usuario ingresar una frecuencia en Hz y después de esto definimos algunas condiciones para de esta manera determinar en que región del espectro se encuentra dicha secuencia. Este punto fue algo más fácil pues consistía en colocar condicionales (if, elif y else) para determinar las acciones y determinar el rango en el que se encuentra cada frecuencia. 
+
+Y si ponemos a correr este código en el terminal podríamos ver algo así:
+
+[![Captura-de-pantalla-2023-03-15-213520.png](https://i.postimg.cc/d0pf2tSy/Captura-de-pantalla-2023-03-15-213520.png)](https://postimg.cc/B85Nss3S)
+
+Y listooo, continuemos con el penúltimo punto. Ya casi, ya casi
+
+## Punto 9 🗺️
+
+En este punto se nos solicitaba escribir un programa que reciba el nombre en minúsculas de un país de America y retorne la ciudad capital, si el país no pertenece al continente debe arrojar país no identificado.
+
+Este punto lo podemos encontrar en [tallerUno.ipynb](/tallerUno.ipynb), donde lo que se puede evidenciar es que por medio de match y case realizamos una listo donde dependiendo del país que ingrese el usuario en minúsculas, el programa se encargará de mostrarle su capital. Algo extenso pero sencillo.
+
+``` python
+lang = input("Escribe un país de América en minúsculas para saber su Capital: ")
+    match lang:
+    case "canada":
+      print("La capital de Canada es Otawwa")
+    case "estados unidos":
+      print("La capital de Estados Unidos es Washington DC.")
+    case "mexico":
+      print("La capital de Mexico es México DF.")
+    case "belice":
+      print("La capital de Belice es Belmopán.")
+    case "costa rica":
+      print("La capital de Costa Rica es San José.")
+    case "el salvador":
+      print("La capital de El Salvador es San Salvador.")
+    case "guatemala":
+      print("La capital de Guatemala es Ciudad de Guatemala.")
+    case "honduras":
+      print("La capital de Honduras es Tegucigalpa.")
+    case "nicaragua":
+      print("La capital de Nicaragua es Managua.")
+    case "panama":
+      print("La capital de de Panama es Panamá.")
+    case "argentina":
+      print("La capital de Argentina es Buenos Aires.")
+    case "bolivia":
+      print("La capital de Bolivia es Sucre. Aunque siempre creíste que la capital de Bolivia era La Paz, esta es solo su sede de gobierno, su constitución establece que es Sucre.")
+    case "brasil":
+      print("La capital de Brasil es Brasilia.")
+    case "chile":
+      print("La capital de Chile es Santiago de Chile.")
+    case "colombia":
+      print("La capital de Colombia es Bogotá.")
+    case "ecuador":
+      print("La capital de Ecuador es Quito.")
+    case "paraguay":
+      print("La capital de Paraguay es Asunción.")
+    case "peru":
+      print("La capital de Peru es Lima.")
+    case "surinam":
+      print("La capital de Surinam es Parabarimo.")
+    case "trinidad y tobago":
+      print("La capital de Trinidad y Tobago es Puerto España.")
+    case "uruguay":
+      print("La capital de Uruguay es montevideo.")
+    case "venezuela":
+      print("La capital de Venezuela es Caracas.")
+    case "puerto rico":
+      print("Puerto Rico no es considerado un país, ya que pertenece a Estados Unidos.")
+    case "antigua y barbuda":
+      print("La capital de Antigua y Barbuda es Saint John.")
+    case "bahamas":
+      print("La capital de Bahamas es Nasáu.")
+    case "barbados":
+      print("La capital de Barbados es Bridgetown.")
+    case "cuba":
+      print("La capital de Cuba es La Habana.")
+    case "dominica":
+      print("La capital de Dominica es Roseau.")
+    case "granada":
+      print("La capital de Granada es Saint George.")
+    case "guyana":
+      print("La capital de Guyana es Georgetown.")
+    case "haiti":
+      print("La capital de Haití es Puerto Príncipe.")
+    case "jamaica":
+      print("La capital de Jamaica es Kingston.")
+    case "republica dominicana":
+      print("La capital de República Dominicana es Santo Domingo.")
+    case "san cristobal y nieves":
+      print("La capital de San Cristóbal y Nieves es Basseterre.")
+    case "san vicente y las granadinas":
+      print("La capital de San Vicente y las Granadinas es Kingstown.")
+    case "santa lucia":
+      print("La capital de Santa Lucía es Castries.")
+    case "alaska":
+      print("Alaska pertenece a uno de los 50 estados que conforman Estados Unidos, no es un país.")
+    case "groenlandia":
+      print("Groenlandia forma parte de Dinamarca, por eso no está incluido en esta lista.")
+    case _:
+      print("País no identificado.")
+```
+
+Y en el momento de correrlo en el terminal evidenciamos algo así:
+
+[![Captura-de-pantalla-2023-03-15-214157.png](https://i.postimg.cc/BvRqj3Th/Captura-de-pantalla-2023-03-15-214157.png)](https://postimg.cc/v1LRKpS9)
+
+Y ahora si, el último punto. El punto 10
+
+## Punto 10 ⏰
+
+Escriba un programa que dada una distancia calcule:
+
++ El tiempo que le tomaría a la luz recorrer la distancia.
++ El tiempo que le tomaría al sonido (en el aire) recorrer la distancia.
++ El tiempo que le tomaría al vehiculo comercial más veloz recorrer la distancia.
++ El tiempo que le tomaría a Bolt recorrer la distancia.
+
+Este punto lo podemos evidenciar en [puntoDiez(/puntoDiez.py) con un código así:
+
+``` python
+#Tenemos la velocidad de la luz
+VelocidadDeLaLuz = 299792458
+
+# Definimos la velocidad del sonido en metros por segundo a 20 grados Celsius, pues esta velocidad varia dependiendo de diferentes factores
+VelocidadDelSonido = 343
+
+#Velocidad del auto
+VelocidadDelAuto = 136.2444
+
+#Velocidad de Bolt
+VelocidadBolt= 12.42
+
+#Luego le solicitamos al usuario que ingrese la distancia en metros
+Distancia = float(input("Ingrese la distancia en metros: "))
+
+#Realizamos la división de la distancia entre la velocidad de la luz para encontrar el tiempo
+Tiempo = Distancia / VelocidadDeLaLuz
+Tiempo_Redondeado = round(Tiempo, 8)
+#Imprimimos el resultado final
+print("El tiempo que le tomaría a la luz recorrer", Distancia, "metros es de", Tiempo_Redondeado, "segundos.")
+
+
+# Calcular el tiempo que le tomaría al sonido recorrer la distancia, dividiendo la distancia ingresada por la velocidad del sonido
+tiempo = Distancia / VelocidadDelSonido
+tiempo_redondeado = round(tiempo, 4)
+# Imprimir el resultado
+print("El tiempo que le tomaría al sonido recorrer", Distancia, "metros en el aire es de", tiempo_redondeado, "segundos.")
+
+
+#Ahora revisaremos cuánto tiempo le tomaría al auto más veloz del mundo recorrer dicha distancia
+Time = Distancia / VelocidadDelAuto
+TimeRedondeado = round (Time, 4 )
+#Imprimir el resultado
+print ("El tiempo que le tomaría al auto más veloz del mundo recorrer", Distancia, " metros es de ",  TimeRedondeado, " segundos")
+
+
+#Finalmente calcularemos el tiempo que le tomará a Bolt recorrer la distancia ingresada
+time = Distancia / VelocidadBolt
+timeRedondeado = round (time, 4)
+#Imprimir el resultado
+print ("El tiempo que le tomaría a Bolt recorrer", Distancia, "metros es de", timeRedondeado, "segundos")
+```
+
+En este punto decidimos comentar cada paso para que sea un poco más fácil suentendimiento. 
+
+Basicamente lo que hicimos el determinar las 4 velocidades y después de esto realizar la operación de siempre para determinar la velocidad. Aunque también redondeamos las respupestas para que los resultados sean un poco más claros y no tan extensos. Te recomendamos revisar el código con sus comentarios para así entenderlo mucho mejor
+
+En el momento que corremos el código podemos ver algo así:
+
+[![Captura-de-pantalla-2023-03-15-214826.png](https://i.postimg.cc/sXcVfNcx/Captura-de-pantalla-2023-03-15-214826.png)](https://postimg.cc/phmNqk3M)
+
+Y listo, hemos terminado. Esperamos les haya gustado siendo lo suficientemente claros y que el universo nos ilumine para que este taller no tenga Bugs. 
