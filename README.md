@@ -564,4 +564,7 @@ En el momento que corremos el código podemos ver algo así:
 
 [![Captura-de-pantalla-2023-03-15-214826.png](https://i.postimg.cc/sXcVfNcx/Captura-de-pantalla-2023-03-15-214826.png)](https://postimg.cc/phmNqk3M)
 
+Con el siguiente diagrama de flujo:
+
+[![Whats-App-Image-2023-03-14-at-9-59-57-PM.jpg](https://i.postimg.cc/tC4Y0S7g/Whats-App-Image-2023-03-14-at-9-59-57-PM.jpg)](https://postimg.cc/MXgWVY7k)
 Y listo, hemos terminado. Esperamos les haya gustado siendo lo suficientemente claros y que el universo nos ilumine para que este taller no tenga Bugs. 
